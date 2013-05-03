@@ -16,10 +16,10 @@
 <table class="table table-condensed lead">
     <tr>
     <td class="avatar-data">
-            {if $post->network eq 'facebook'}
-                <a href="https://facebook.com/{$post->author_user_id}" title="{$post->author_username}"><img src="{$post->author_avatar}" class=""  width="48" height="48"/></a>
-            {else}
+            {if $post->network eq 'twitter'}
                 <a href="https://twitter.com/intent/user?user_id={$post->author_user_id}" title="{$post->author_username}"><img src="{$post->author_avatar}" class=""  width="48" height="48"/></a>
+            {else}
+                <a href="#" title="{$post->author_username}"><img src="{$post->author_avatar}" class=""  width="48" height="48"/></a>
             {/if}
     </td>
     <td>
